@@ -1,5 +1,11 @@
 
 import './App.css'
+import Phones from './assets/Phones/Phones'
+import LineChart from './assets/PriceOption/LineChart/LineChart'
+
+import PriceOptions from './assets/PriceOption/priceOptions'
+
+import NAvbar from './Components/Navbar/NAvbar'
 
 function App() {
 
@@ -7,10 +13,12 @@ function App() {
   return (
     <>
     
-      <h1>Vite + React</h1>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <NAvbar></NAvbar>
+
+    <PriceOptions></PriceOptions>
+    <LineChart></LineChart>
+    <Phones></Phones>
+ 
     </>
   )
 }
